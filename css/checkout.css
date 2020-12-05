@@ -91,3 +91,13 @@
     color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
+@media screen and (max-width:900px){
+    #content-wrapper{
+        flex-direction: column;
+    }
+
+    #content-wrapper > div:last-of-type, #content-wrapper > div:first-of-type {
+        width: 100%;
+    }
+}

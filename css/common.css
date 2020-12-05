@@ -8,11 +8,9 @@ body {
     box-shadow: 0 2px 5px #ccc;
     background-color: white;
     z-index: 10;
-
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,6 +118,10 @@ body {
     border-radius: 50%;
 }
 
+#menu-dropdown{
+    display: none;
+}
+
 main {
     width: 100%;
     min-height: 80vh;
@@ -171,4 +173,29 @@ footer > div:first-of-type {
     text-transform: uppercase;
     font-size: 14px;
     opacity: 0.8;
+}
+
+@media screen and (max-width:900px){
+    #menu-dropdown{
+        display: block;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    #left-menu, #search-wrapper{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer-heading{
+        margin-top: 40px;
+    }
+
+    footer > div{
+        padding: 0px;
+        line-height: 1.1;
+    }
 }

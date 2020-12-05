@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.center').slick({
+    $('.carousel').slick({
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -9,23 +9,14 @@ $(document).ready(function(){
         arrows: false,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 900,
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '5%',
               slidesToShow: 1
             }
-          }
+          },
         ]
     });
 

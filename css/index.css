@@ -52,12 +52,11 @@
 .product-grid {
     display: flex;
     justify-content: start;
-    flex-wrap: wrap;
+    flex-wrap: wrap;justify-content: center;
 }
 
 .product-card {
-    width: 100%;
-    max-width: 19%;
+    width: 240px;
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-bottom: 16px;
