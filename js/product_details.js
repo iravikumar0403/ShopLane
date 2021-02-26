@@ -65,11 +65,6 @@ $(document).ready(function() {
             window.localStorage.setItem('product-list', JSON.stringify(productList));
         }
 
-        var totalCount = 0;
-        for(var i=0; i<productList.length; i++) {
-            totalCount = totalCount + productList[i].count;
-        }
-    
-        $('#cart-count').html(totalCount);
+        setCartCount();
     })
 });
